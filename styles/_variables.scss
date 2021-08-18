@@ -1,0 +1,34 @@
+$body-background: #1e1e21;
+$header-background: #0d0d10;
+$mainText: #dbd9d8;
+$secondaryText: #b0afaf;
+$border: #cfcccc7e;
+$circle: #ff0000;
+$submitHover: #ff00004d;
+
+@mixin breakpoint($point) {
+    @if $point == xxl {
+        @media (max-width: 1440px) {@content;}
+    }
+    @else if $point == xl {
+        @media (max-width: 1200px) {@content;}
+    }
+    @else if $point == lg {
+        @media (max-width: 992px) {@content;}
+    }
+    @else if $point == mg {
+        @media (max-width: 830px) {@content;}
+    }
+    @else if $point == md {
+        @media (max-width: 768px) {@content;}
+    }
+    @else if $point == sm {
+        @media (max-width: 576px) {@content;}
+    }
+    @else if $point == s {
+        @media (max-width: 460px) {@content;}
+    }
+    @else if $point == xs {
+        @media (max-width: 340px) {@content;}
+    }
+}

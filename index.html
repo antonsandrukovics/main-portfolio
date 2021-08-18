@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <nav class="header-navbar">
+                    <ul class="header-list">
+                        <li class="header-list-left"><a class="secondaryText" href="#about_me">About me</a></li>
+                        <li class="header-list-left"><a class="secondaryText" href="#portfolio">Portfolio</a></li>
+                        <li class="header-list-left"><a class="secondaryText" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a href="#about_me" onclick="closeNav()">About me</a>
+                        <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                        <a href="#contact" onclick="closeNav()">Contact</a>
+                    </div>
+                </div>
+                <div class="header-mobile-nav">
+                    <span class="mobile-nav" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="header-contact">
+                    <ul class="header-list">
+                        <li class="header-list-right"><a href="tel:+37127815392" class="secondaryText">+371 27815392</a></li>
+                        <li class="header-list-right"><a href="mailto:antonsandrukovics@gmail.com" class="secondaryText">antonsandrukovics@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="wrapper">
+                <div class="main-startPage">
+                    <div class="main-startPage-image">
+                    </div>
+                    <div class="main-startPage-text">
+                        <h2 class="main-startPage-text-name">Antons Andrukovics</h2>
+                        <h1 class="main-startPage-text-dev">web-developer</h1>
+                        <div class="main-startPage-text-link">
+                            <p class="main-startPage-text-link-text">Discuss the project</p>
+                            <ul class="main-startPage-text-link list">
+                                <li class="first"><a class="main-startPage-text-link-a" href="https://vk.com/id302989706" target="_blank">VK</a></li>
+                                <li><a class="main-startPage-text-link-a" href="https://www.facebook.com/andrukovic" target="_blank">Facebook</a></li>
+                                <li><a class="main-startPage-text-link-a" href="https://www.linkedin.com/in/antons-andrukovics-a02207172/" target="_blank">Linkedin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wrapper">
+                <div class="main-aboutMePage" id="about_me">
+                    <h2 class="main-aboutMePage-h2">Technology</h2>
+                    <div class="main-aboutMePage-technology">
+                        <div class="main-aboutMePage-technology-item"><img class="main-aboutMePage-technology-item-img" src="image/icon/vectorpaint.svg" alt=""></div>
+                        <div class="main-aboutMePage-technology-item"><img class="main-aboutMePage-technology-item-img" src="image/icon/vectorpaint (1).svg" alt=""></div>
+                        <div class="main-aboutMePage-technology-item"><img class="main-aboutMePage-technology-item-img" src="image/icon/vectorpaint (2).svg" alt=""></div>
+                        <div class="main-aboutMePage-technology-item"><img class="main-aboutMePage-technology-item-img" src="image/icon/vectorpaint (3).svg" alt=""></div>
+                    </div>
+                    <div class="main-aboutMePage-block">
+                        <h2 class="main-aboutMePage-h2">Education</h2>
+                        <ul class="main-aboutMePage-block-list">
+                            <li>
+                                <h3>Higher education</h3>
+                                <p>Programmer - Rezekne Academy Of Technologies</p>
+                                <p>2018 - 2020 Graduated</p>
+                            </li>
+                            <li>
+                                <h3>Courses</h3> 
+                                <p>Responsive Web Design developer freecodecamp.org/</p>
+                                <p>2021 - 2021 Graduated</p>
+                            </li>                            
+                        </ul>
+                    </div>
+    
+                    <div class="main-aboutMePage-block">
+                        <h2 class="main-aboutMePage-h2">Work Experience</h2>
+                        <ul class="main-aboutMePage-block-list">
+                            <li>
+                                <h3>Programmer (Trainee)</h3>
+                                <p>SIA “Midis”</p>
+                                <p>2021 - 2021 Graduated</p>
+                            </li>
+                            <li>
+                                <h3>Programmer (Trainee)<br></h3>
+                                <p>Rezekne Academy Of Technologies</p>
+                                <p>2021 - 2021 Graduated</p>
+                            </li>                        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-portfolio" id="portfolio">
+                <div class="wrapper">
+                    <div class="main-portfolio-footer">
+                        <h2 class="main-portfolio-footer-h2">portfolio</h2>
+                        <div class="main-portfolio-footer-navbar">
+                            <ul class="main-portfolio-footer-navbar-list">
+                                <li><button onclick="show(1)" class="portfolioNavbar secondaryText">Website layout</button></li>
+                                <li><button onclick="show(2)" class="portfolioNavbar secondaryText">C#</button></li>
+                                <li><button onclick="show(3)" class="portfolioNavbar secondaryText">JavaScript</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="main-portfolio-main">
+                    <div class="wrapper">
+                        <div class="websiteLayout" id="portfolio-block1">
+                            <section class="main-portfolio-main-section">
+                                <article>
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <img class="main-portfolio-main-image" src="image/project01.webp" alt="">
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <h2 class="">Pizza page</h2>
+                                                <ul>
+                                                    <li>Layout of the layout from Figma</li>
+                                                    <li>Adding adaptive</li>
+                                                    <li>HTML + CSS</li>
+                                                </ul>
+                                                <a target="_blank" href="https://antonsandrukovics.github.io/Pizza.github.io/">View page</a>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </article>
+                                <article>
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <img class="main-portfolio-main-image" src="image/project02.webp" alt="">
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <h2 class="">Beauty page</h2>
+                                                <ul>
+                                                    <li>Layout of the layout from Figma</li>
+                                                    <li>Adding adaptive</li>
+                                                    <li>HTML + CSS</li>
+                                                </ul>
+                                                <a target="_blank" href="https://antonsandrukovics.github.io/beauty.github.io/">View page</a>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </article>
+                                <article>
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <img class="main-portfolio-main-image" src="image/ITCompany.png" alt="">
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <h2 class="">IT Company page</h2>
+                                                <ul>
+                                                    <li>Layout of the layout from Figma</li>
+                                                    <li>Adding adaptive</li>
+                                                    <li>HTML + CSS</li>
+                                                </ul>
+                                                <a target="_blank" href="https://antonsandrukovics.github.io/ITCompany/">View page</a>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </article>
+                                <article>
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <img class="main-portfolio-main-image" src="image/the-loop.png" alt="">
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <h2 class="">The loop page</h2>
+                                                <ul>
+                                                    <li>Layout of the layout from Figma</li>
+                                                    <li>Adding adaptive</li>
+                                                    <li>HTML + CSS + SCSS</li>
+                                                </ul>
+                                                <a target="_blank" href="https://antonsandrukovics.github.io/TheLoop/">View page</a>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </article>
+                                <article>
+                                    <div class="flip-box">
+                                        <div class="flip-box-inner">
+                                            <div class="flip-box-front">
+                                                <img class="main-portfolio-main-image" src="image/moon-lens.png" alt="">
+                                            </div>
+                                            <div class="flip-box-back">
+                                                <h2 class="">Moon lens page</h2>
+                                                <ul>
+                                                    <li>Layout of the layout from Figma</li>
+                                                    <li>Adding adaptive</li>
+                                                    <li>HTML + CSS + SCSS</li>
+                                                </ul>
+                                                <a target="_blank" href="https://antonsandrukovics.github.io/MoonLens/">View page</a>
+                                            </div>
+                                        </div> 
+                                    </div> 
+                                </article>
+                            </section>
+                        </div>
+                        <div class="CSharp" id="portfolio-block2">
+                            <section>
+                                <article>
+                                    <div class="CSharp-text">
+                                        <h2>Manual image annotation windows application</h2>
+                                        <p>This program is intended for manual annotation of images.</p>
+                                        <p>Technologies, libraries and frameworks:</p>
+                                        <ul>
+                                            <li>System IO</li>
+                                            <li>SQLite</li>
+                                            <li>System Drawing</li>
+                                            <li>Linq</li>
+                                            <li>Windows Forms</li>
+                                            <li>Collections Generic</li>
+                                            <li>SQLite</li>
+                                        </ul>
+                                        <a href="https://github.com/antonsandrukovics/Manual-image-annotation-windows-application" target="_blank">Manual image annotation windows application github</a>
+                                    </div>
+                                    <div class="CSharp-image">
+                                        <img class="mainImage" src="image/image-anatation01.png" alt="">
+                                        <img src="image/image-anatation02.png" alt="">
+                                        <img src="image/image-anatation03.png" alt="">
+                                        <img src="image/image-anatation04.png" alt="">
+                                    </div>
+                                </article>
+                            </section>
+                            
+                            <section>
+                                <article>
+                                    <div class="CSharp-text">
+                                        <h2>Folder Cleaner</h2>
+                                        <p>This is a PC cleaning app. 
+                                            With it, you can collect and structure the files you need. 
+                                            Sorting can be customized for any user.</p>
+                                        <p>Technologies, libraries and frameworks:</p>
+                                        <ul>
+                                            <li>System IO</li>
+                                            <li>SQLite</li>
+                                            <li>System Drawing</li>
+                                            <li>Linq</li>
+                                            <li>Windows Forms</li>
+                                            <li>Collections Generic</li>
+                                        </ul>
+                                        <a href="https://github.com/antonsandrukovics/Folder-Cleaner" target="_blank">Folder Cleaner github</a>
+                                    </div>
+                                    <div class="CSharp-image">
+                                        <img class="mainImage" src="image/desctopCleaner1.png" alt="">
+                                        <img src="image/desctopCleaner2.png" alt="">
+                                        <img src="image/desctopCleaner3.png" alt="">
+                                        <img src="image/desctopCleaner4.png" alt="">
+                                    </div>
+                                </article>
+                            </section>                               
+                            
+                            <section>
+                                <article>
+                                    <div class="CSharp-text">
+                                        <h2>Sudoku Game</h2>
+                                        <p>This is a Windows application for playing Sudoku with different levels of difficulty</p>
+                                        <p>Technologies, libraries and frameworks:</p>
+                                        <ul>
+                                            <li>System IO</li>
+                                            <li>SQLite</li>
+                                            <li>System Drawing</li>
+                                            <li>Linq</li>
+                                            <li>Windows Forms</li>
+                                            <li>Collections Generic</li>
+                                            <li>SQLite</li>
+                                        </ul>
+                                        <a href="https://github.com/antonsandrukovics/Sudoku-Game" target="_blank">Sudoku Game github</a>
+                                    </div>
+                                    <div class="CSharp-image">
+                                        <img class="mainImage" src="image/sudoku.png" alt="">
+                                        <img src="image/sudoku2.png" alt="">
+                                        <img src="image/sudoku3.png" alt="">
+                                        <img src="image/sudoku4.png" alt="">
+                                    </div>
+                                </article>
+                            </section>
+                        </div>
+                        <div class="javascript" id="portfolio-block3">
+                            <div class="javascript-content">
+                                <a href="https://codepen.io/Antons-Andrukovics/pen/VwbzNVp" target="_blank"><img src="image/calculator.png" alt=""></a>
+                            </div>
+                            <h2>Simple calculator</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="main-contact" id="contact">
+                    <div class="main-contact-title">
+                        <h2>contact</h2>
+                    </div>                    
+                    <div class="main-contact-main">
+                        <div class="main-contact-main-link">
+                            <ul class="list">
+                                <li class="first"><a class="main-startPage-text-link-a" href="https://vk.com/id302989706" target="_blank">VK</a></li>
+                                <li><a class="main-startPage-text-link-a" href="https://www.facebook.com/andrukovic" target="_blank">Facebook</a></li>
+                                <li><a class="main-startPage-text-link-a" href="https://www.linkedin.com/in/antons-andrukovics-a02207172/" target="_blank">Linkedin</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-contact-main-form">
+                            <form action="">
+                                <label for="pNumber">Phone number</label><br>
+                                <input type="tel" id="pNumber" name="pNumber" placeholder="Enter phone number"><br>
+                                <label for="typeCommun">Choose a messages</label><br>
+                                <select name="typeCommun" id="typeCommun">
+                                    <option value="telegram">Telegram</option>
+                                    <option value="whatsapp">Whatsapp</option>
+                                    <option value="viber">Viber</option>
+                                    <option value="signal">Signal</option>
+                                </select><br>
+                                <input type="submit" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer">
+                <nav class="footer-navbar">
+                    <ul class="footer-navbar-list">
+                        <li><a href="#about_me" class="secondaryText">About me</a></li>
+                        <li><a href="#portfolio" class="secondaryText">Portfolio</a></li>
+                        <li><a href="#contact" class="secondaryText">Contact</a></li>
+                    </ul>
+                </nav>
+                <ul class="footer-contact">
+                    <li><a href="tel:+37127815392" class="secondaryText">+371 27815392</a></li>
+                    <li><a href="mailto:antonsandrukovics@gmail.com" class="secondaryText">antonsandrukovics@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
